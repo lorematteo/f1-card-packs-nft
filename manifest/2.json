@@ -1,0 +1,19 @@
+{
+  "name": "The Aerodynamics",
+  "description": "Aerodynamics are crucial to an F1 car's ability to maintain speed and stability at high velocity. This card represents precision engineering and the importance of efficiency in motion.",
+  "image": "ipfs://bafybeihvszlvrqgtd44ohldjqm4qyfcgen2hzmawumjczkw5vr5hpr4n3e",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "F1 Car Component"
+    },
+    {
+      "trait_type": "Symbolism",
+      "value": "Precision"
+    },
+    {
+      "trait_type": "Main Element",
+      "value": "Front Wing"
+    }
+  ]
+}

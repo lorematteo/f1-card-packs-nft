@@ -1,0 +1,19 @@
+{
+  "name": "The Tires",
+  "description": "Tires are the only connection between the car and the road, determining grip, control, and performance. This card represents traction, adaptability, and the critical role of strategy in an F1 race.",
+  "image": "ipfs://bafybeigli5dfe4hqbra5imi6a7v2nwgm5qz56oc6tzsronepll4x2yzd4u",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "F1 Car Component"
+    },
+    {
+      "trait_type": "Symbolism",
+      "value": "Traction"
+    },
+    {
+      "trait_type": "Main Element",
+      "value": "Tires"
+    }
+  ]
+}

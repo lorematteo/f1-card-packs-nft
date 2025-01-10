@@ -1,0 +1,19 @@
+{
+  "name": "The Engine",
+  "description": "The engine is the powerhouse of any Formula 1 car, providing the raw speed and power needed to dominate the track. This card symbolizes energy, precision, and the relentless drive for victory.",
+  "image": "ipfs://bafybeiexkfjqxacwmlkvw3z2hdlweofutvgzjgmsn6txlecyh4xajmxiyq",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "F1 Car Component"
+    },
+    {
+      "trait_type": "Symbolism",
+      "value": "Energy"
+    },
+    {
+      "trait_type": "Main Element",
+      "value": "Engine"
+    }
+  ]
+}
