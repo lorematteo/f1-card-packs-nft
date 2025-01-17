@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* Text Section */}
         <div className="relative flex w-full flex-col gap-6 lg:w-1/2">
-          <p className="text-primary text-center font-extrabold lg:text-left">
+          <p className="text-center font-extrabold text-primary lg:text-left">
             GET ON THE WHITELIST NOW
           </p>
           <h1 className="text-center text-5xl font-bold lg:text-left lg:text-7xl">
