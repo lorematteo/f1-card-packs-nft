@@ -1,10 +1,11 @@
 require('dotenv').config();
 const { ethers } = require("ethers");
+const contractJSON = require("../contracts/F1CardPacks.json");
 
 const { API_URL, PRIVATE_KEY, CONTRACT_ADDRESS, CONTRACT_ABI } = process.env;
 
 const contractAddress = CONTRACT_ADDRESS;
-const abi = CONTRACT_ABI;
+const abi = contractJSON.abi;
 
 // Alchemy provider
 const provider = new ethers.providers.JsonRpcProvider(API_URL);
