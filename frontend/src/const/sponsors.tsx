@@ -1,4 +1,4 @@
-export const sponsors = [
+export const SPONSORS = [
   {
     img: '/brands/hardhat-logo.svg',
     href: 'https://hardhat.org/',

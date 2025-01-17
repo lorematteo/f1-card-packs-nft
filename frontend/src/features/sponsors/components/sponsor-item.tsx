@@ -11,13 +11,9 @@ const SponsorItem: React.FC<SponsorItemProps> = ({ img, href }) => {
     <a
       href={href}
       target="_blank"
-      className='opacity-50 hover:opacity-100 w-24 h-6 md:w-32 md:h-8 lg:w-48 lg:h-12 relative'
+      className="relative h-6 w-24 opacity-50 hover:opacity-100 md:h-8 md:w-32 lg:h-12 lg:w-48"
     >
-      <Image
-        src={img}
-        alt="Sponsor Logo"
-        fill
-      />
+      <Image src={img} alt="Sponsor Logo" fill />
     </a>
   );
 };

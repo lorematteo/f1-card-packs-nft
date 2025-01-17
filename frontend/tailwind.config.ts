@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         background: '#020710',
+        grey: '#191919',
         primary: '#b6fb44',
       },
       backgroundImage: {

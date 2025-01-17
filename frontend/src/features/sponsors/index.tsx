@@ -1,6 +1,6 @@
 import SponsorItem from './components/sponsor-item';
 import Wrapper from '@/components/wrapper';
-import { sponsors } from '@/const/sponsors';
+import { SPONSORS } from '@/const/sponsors';
 import React from 'react';
 
 const Sponsors = () => {
@@ -9,7 +9,7 @@ const Sponsors = () => {
       <Wrapper className="flex w-full flex-col">
         <hr className="mb-8 border-white opacity-15" />
         <div className="mb-32 flex flex-wrap items-center justify-center gap-16 lg:justify-between">
-          {sponsors.map((item, index) => (
+          {SPONSORS.map((item, index) => (
             <SponsorItem key={index} {...item} />
           ))}
         </div>
