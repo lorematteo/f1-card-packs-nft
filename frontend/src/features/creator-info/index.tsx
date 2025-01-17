@@ -6,7 +6,7 @@ import React from 'react';
 
 const CreatorInfo: React.FC = () => {
   return (
-    <div className="relative flex justify-center bg-background pt-32" id="artist">
+    <div className="relative flex justify-center bg-background pt-32" id="creator">
       <Image
         src="/details/detail3.png"
         alt="Detail 3"
