@@ -1,9 +1,13 @@
 import Header from '@/features/header';
+import Sponsors from '@/features/sponsors';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Header />
+      <Sponsors />
     </>
   );
 }
+
+export default Home;

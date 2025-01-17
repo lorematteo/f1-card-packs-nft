@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/button';
+import Wrapper from '@/components/wrapper';
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       className="min-w-screen flex min-h-screen items-center justify-center bg-background bg-circle-glow bg-cover bg-center bg-no-repeat pb-8 lg:pb-0"
       id="header"
     >
-      <div className="flex w-full max-w-[75rem] flex-col gap-12 px-8 lg:flex-row">
+      <Wrapper className="flex w-full flex-col gap-12 lg:flex-row">
         {/* Mobile View Images */}
         <div className="relative mt-12 flex h-[450px] lg:hidden">
           <Image
@@ -17,6 +18,7 @@ const Header = () => {
             height={320}
             alt="NFT 2"
             className="absolute left-1/4 top-24 z-20 rounded-3xl shadow-lg"
+            priority={true}
           />
           <Image
             src="/nfts/1.jpg"
@@ -24,6 +26,7 @@ const Header = () => {
             height={320}
             alt="NFT 1"
             className="absolute right-1/4 top-0 z-10 rounded-3xl shadow-lg"
+            priority={true}
           />
         </div>
 
@@ -60,6 +63,7 @@ const Header = () => {
             height={480}
             alt="NFT 2"
             className="absolute bottom-0 left-0 z-30 rounded-3xl shadow-lg"
+            priority={true}
           />
           <Image
             src="/nfts/1.jpg"
@@ -67,9 +71,10 @@ const Header = () => {
             height={480}
             alt="NFT 1"
             className="absolute right-0 top-0 z-10 rounded-3xl shadow-lg"
+            priority={true}
           />
         </div>
-      </div>
+      </Wrapper>
     </div>
   );
 };
