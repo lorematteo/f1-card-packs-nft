@@ -1,5 +1,6 @@
 import CollectionInfo from '@/features/collection-info';
 import CreatorInfo from '@/features/creator-info';
+import CTA from '@/features/cta';
 import Header from '@/features/header';
 import Sponsors from '@/features/sponsors';
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Sponsors />
       <CollectionInfo />
       <CreatorInfo />
+      <CTA />
     </>
   );
 };
