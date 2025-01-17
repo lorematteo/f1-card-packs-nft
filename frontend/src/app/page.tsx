@@ -1,5 +1,13 @@
-export default function Home() {
+import Header from '@/features/header';
+import Sponsors from '@/features/sponsors';
+
+const Home = () => {
   return (
-    <div>Hello World!</div>
+    <>
+      <Header />
+      <Sponsors />
+    </>
   );
 }
+
+export default Home;
