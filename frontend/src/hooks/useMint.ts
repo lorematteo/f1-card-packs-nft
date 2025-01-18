@@ -9,6 +9,7 @@ export const useMintNFT = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [transactionHash, setTransactionHash] = useState<string | null>(null);
+  const [minted, setMinted] = useState<boolean>(false);
 
   useEffect(() => {
       if (error) {
@@ -31,6 +32,7 @@ export const useMintNFT = () => {
     const contract = new ethers.Contract(contractAddress, abi, signer);
 
     try {
+      setMinted(false);
       setIsLoading(true);
       const packPrice = await contract.packPrice();
 
@@ -41,6 +43,7 @@ export const useMintNFT = () => {
 
       // Wait for the transaction to be mined
       const receipt = await tx.wait();
+      setMinted(true);
       console.log("Transaction confirmed:", receipt.transactionHash);
 
       setIsLoading(false);
@@ -59,5 +62,5 @@ export const useMintNFT = () => {
     }
   };
 
-  return { mintNFT, isLoading, error, transactionHash };
+  return { mintNFT, minted, transactionHash, isLoading, error };
 };
