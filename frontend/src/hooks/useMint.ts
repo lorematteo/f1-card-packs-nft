@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import CONTRACT_ABI from "@/const/contract-abi.json";
 
@@ -9,6 +9,12 @@ export const useMintNFT = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [transactionHash, setTransactionHash] = useState<string | null>(null);
+
+  useEffect(() => {
+      if (error) {
+        setError(null);
+      }
+    }, [error]);
 
   // Function to mint NFT
   const mintNFT = async () => {
@@ -39,9 +45,12 @@ export const useMintNFT = () => {
 
       setIsLoading(false);
     } catch (err) {
-      console.error("Minting failed:", err);
       if (err instanceof Error) {
-        setError(err.message);
+        if (err.message.includes("4001")) {
+          setError("Transaction was rejected. Please review the request and approve it in your MetaMask wallet.");
+        } else {
+          setError(err.message);
+        }
       } else {
         setError("Failed to connect wallet");
       }

@@ -3,9 +3,17 @@
 import Loader from '@/components/loader';
 import { useWallet } from '@/hooks/useWallet';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import toast from 'react-hot-toast';
 
 const Account = () => {
   const { balance, connectWallet, disconnectWallet, isConnected, isLoading, error } = useWallet();
+
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+  }, [error]);
 
   return (
     <div className="absolute top-0 right-0 p-4 items-end flex flex-col">
@@ -19,7 +27,6 @@ const Account = () => {
         {isLoading ? "" : (isConnected ? "Disconnect wallet" : "Connect with MetaMask")}
       </button>
       {balance && <p className='opacity-90 text-sm pt-1'>Balance: {Math.round((parseFloat(balance) + Number.EPSILON) * 100000) / 100000}</p>}
-      {error && <p>{error}</p>}
     </div>
   );
 };

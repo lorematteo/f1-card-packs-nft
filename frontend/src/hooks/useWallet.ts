@@ -34,6 +34,12 @@ export const useWallet = (): WalletState => {
     }
   }, []);
 
+  useEffect(() => {
+    if (error) {
+      setError(null);
+    }
+  }, [error]);
+
   // Connect to the user's wallet
   const connectWallet = async () => {
     setIsLoading(true);
