@@ -16,7 +16,7 @@ const Account = () => {
   }, [error]);
 
   return (
-    <div className="absolute top-0 right-0 p-4 items-end flex flex-col">
+    <div className="absolute top-0 right-0 p-4 items-end flex flex-col z-50">
       <button
         type="button"
         className="inline-flex items-center gap-1 rounded-lg bg-[#0377c9] hover:bg-[#1565c0] px-4 py-2.5 transition-colors text-center text-white text-sm font-medium"
