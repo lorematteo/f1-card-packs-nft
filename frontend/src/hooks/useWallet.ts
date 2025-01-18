@@ -64,7 +64,11 @@ export const useWallet = (): WalletState => {
       setBalance(ethers.formatEther(userBalance));
     } catch (err) {
       if (err instanceof Error) {
-        setError(err.message);
+        if (err.message.includes("4001")) {
+          setError("Transaction was rejected. Please review the request and approve it in your MetaMask wallet.");
+        } else {
+          setError(err.message);
+        }
       } else {
         setError("Failed to connect wallet");
       }
