@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <button className="flex rounded-full bg-primary px-8 py-2 text-black hover:opacity-80" {...props}>
+    <button className="flex rounded-full bg-primary px-8 py-2 text-black hover:opacity-80 transition-opacity" {...props}>
       {children}
     </button>
   );
@@ -18,7 +18,7 @@ export default Button;
 const CircleButton: React.FC<ButtonProps> = ({ children, className }) => {
   return (
     <button
-      className={'flex rounded-full bg-primary px-8 py-2 text-black hover:opacity-80 ' + className}
+      className={'flex rounded-full bg-primary px-8 py-2 text-black hover:opacity-80 transition-opacity ' + className}
     >
       {children}
     </button>
