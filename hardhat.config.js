@@ -1,5 +1,6 @@
 require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-verify");
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
 
@@ -14,8 +15,9 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: {
-      sepolia: ETHERSCAN_API_KEY,
-    },
+    apiKey: ETHERSCAN_API_KEY,
   },
+  sourcify: {
+    enabled: true
+  }
 }
