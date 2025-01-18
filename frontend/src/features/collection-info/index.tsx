@@ -9,14 +9,14 @@ const CollectionInfo: React.FC = () => {
       <Image
         src="/details/detail1.png"
         alt="Detail 1"
-        className="absolute right-32 top-0 z-10 h-auto opacity-25"
+        className="absolute right-32 top-0 z-10 size-auto opacity-25"
         width={150}
         height={150}
       />
       <Image
         src="/details/detail2.png"
         alt="Detail 2"
-        className="absolute bottom-0 left-2 z-10 h-auto opacity-25 lg:left-32"
+        className="absolute bottom-0 left-2 z-10 size-auto opacity-25 lg:left-32"
         width={150}
         height={150}
       />

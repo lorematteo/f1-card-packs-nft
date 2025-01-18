@@ -12,7 +12,7 @@ const CreatorInfo: React.FC = () => {
         alt="Detail 3"
         width={150}
         height={150}
-        className="absolute -bottom-20 right-8 z-10 h-auto opacity-25 lg:right-64"
+        className="absolute -bottom-20 right-8 z-10 opacity-25 lg:right-64 size-auto"
       />
       <Wrapper className="z-20 flex flex-col-reverse gap-8 lg:flex-row">
         <div className="flex w-full flex-col gap-8 lg:w-1/2">

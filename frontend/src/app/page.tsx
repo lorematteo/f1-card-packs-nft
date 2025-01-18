@@ -1,3 +1,4 @@
+import Account from '@/features/account';
 import CollectionInfo from '@/features/collection-info';
 import CreatorInfo from '@/features/creator-info';
 import CTA from '@/features/cta';
@@ -8,6 +9,7 @@ import Sponsors from '@/features/sponsors';
 const Home = () => {
   return (
     <>
+      <Account />
       <Header />
       <Sponsors />
       <CollectionInfo />

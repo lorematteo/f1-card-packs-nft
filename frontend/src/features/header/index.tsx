@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import Button from '@/components/button';
 import Wrapper from '@/components/wrapper';
+import MintButton from './components/mint-button';
 
 const Header = () => {
   return (
@@ -41,11 +40,7 @@ const Header = () => {
           <p className="text-center font-light tracking-widest lg:text-left">
             Unleash the thrill of Formula 1 with exclusive NFT cards featuring iconic F1 car parts.
           </p>
-          <div className="flex justify-center lg:justify-start">
-            <Link href="#collection">
-              <Button>Mint a NFT</Button>
-            </Link>
-          </div>
+          <MintButton />
           <div className="mt-8 flex flex-col items-center gap-2 lg:mt-auto lg:flex-row">
             <p className="text-5xl font-bold">8K+</p>
             <p className="ml-4 font-normal uppercase">Minted</p>
