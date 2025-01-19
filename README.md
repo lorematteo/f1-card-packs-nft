@@ -4,7 +4,7 @@
 
 A decentralized application (dApp) for minting and collecting animated NFT cards featuring Formula 1 car parts. Built on a robust Ethereum-based smart contract using the ERC-1155 standard and an interactive Next.js frontend, this project seamlessly merges blockchain technology with modern web development.
 
-> 🚀 **[Live Demo](f1-card-packs-nft.vercel.app)**
+> 🚀 **[Live Demo](https://f1-card-packs-nft.vercel.app/)**
 
 <br>
 
