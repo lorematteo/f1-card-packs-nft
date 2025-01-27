@@ -2,13 +2,13 @@ require('dotenv').config();
 const { ethers } = require("ethers");
 const contractJSON = require("../contracts/F1CardPacks.json");
 
-const { API_URL, PRIVATE_KEY, CONTRACT_ADDRESS } = process.env;
+const { PROVIDER_API_URL, PRIVATE_KEY, CONTRACT_ADDRESS } = process.env;
 
 const contractAddress = CONTRACT_ADDRESS;
 const abi = contractJSON.abi;
 
 // Alchemy provider
-const provider = new ethers.providers.JsonRpcProvider(API_URL);
+const provider = new ethers.providers.JsonRpcProvider(PROVIDER_API_URL);
 
 // Signer (your wallet)
 const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
